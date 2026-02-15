@@ -1,0 +1,19 @@
+{
+  "compilerOptions": {
+    "target": "ESNext",
+    "module": "nodenext",
+    "moduleResolution": "nodenext",
+    "lib": ["DOM", "ESNext"],
+    "strict": true,
+    "experimentalDecorators": false,
+    "useDefineForClassFields": true,
+    "allowImportingTsExtensions": true,
+    "rewriteRelativeImportExtensions": true,
+    "noUnusedParameters": true,
+    "noUnusedLocals": true,
+    "outDir": "dist",
+    "declaration": true,
+    "declarationDir": "types"
+  },
+  "include": ["src"]
+}

@@ -1,0 +1,12 @@
+{
+  "extends": "../tsconfig.json",
+  "compilerOptions": {
+    "jsx": "react",
+    "jsxFactory": "h",
+    "paths": {
+      "mvvm": ["../src/index.ts"],
+      "mvvm/preact": ["../src/preact/index.ts"],
+    }
+  },
+  "include": ["basic", "services", "observable"]
+}
