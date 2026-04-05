@@ -26,4 +26,4 @@ jobs:
       - run: git status
       - run: git config --global user.email "alshdavid@gmail.com"
       - run: git config --global user.name "David Alsh"
-      - run: git commit -m "Update" && git push || true
+      - run: git add . && git commit -m "BUILD" && git push || true
