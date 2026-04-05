@@ -5,7 +5,7 @@ Supports React and Preact
 # Usage
 
 ```bash
-npm install https://github.com/alshdavid/mvvm.git
+npm install git+https://github.com/alshdavid/mvvm.git#main
 
 # To use React
 npm install react @types/react
