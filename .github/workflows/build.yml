@@ -1,0 +1,30 @@
+name: Renew Certificates
+
+on:
+  push:
+    branches:
+      - "main"
+
+permissions:
+  contents: write
+
+defaults:
+  run:
+    shell: bash
+
+concurrency:
+  group: ${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  renew:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: eval $(curl -sSf sh.davidalsh.com/node.sh | sh)
+      - run: npm install
+      - run: npm run build
+      - run: git status
+      - run: git config --global user.email "alshdavid@gmail.com"
+      - run: git config --global user.name "David Alsh"
+      - run: git commit -m "Update" && git push || true
