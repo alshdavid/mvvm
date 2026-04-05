@@ -30,10 +30,16 @@
       "module-sync": "./dist/preact/index.js",
       "types": "./types/preact/index.d.ts"
     },
+    "./forms": {
+      "import": "./dist/forms/index.js",
+      "module-sync": "./dist/forms/index.js",
+      "types": "./types/forms/index.d.ts"
+    },
     "./package.json": "./package.json"
   },
   "scripts": {
-    "build": "npx tsc"
+    "build": "npx tsc",
+    "format": "npx prettier ./src/** -w"
   },
   "devDependencies": {
     "@types/react": "^19.2.14",

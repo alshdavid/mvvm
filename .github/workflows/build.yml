@@ -22,6 +22,7 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - run: npm install
+      - run: npm run format
       - run: npm run build
       - run: git status
       - run: git config --global user.email "alshdavid@gmail.com"
