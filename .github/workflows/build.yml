@@ -21,7 +21,6 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - run: eval $(curl -sSf sh.davidalsh.com/node.sh | sh)
       - run: npm install
       - run: npm run build
       - run: git status
